@@ -18,3 +18,12 @@ class Location:
         dz = self.z - location.z
 
         return math.sqrt(dx**2 + dy**2 + dz**2)
+
+class Scale:
+    def __init__(self, x: float, y: float, z: float):
+        self.x = x
+        self.y = y
+        self.z = z
+
+    def __repr__(self):
+        return f"Scale(x={self.x}, y={self.y}, z={self.z})"
